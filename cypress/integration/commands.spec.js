@@ -13,6 +13,6 @@ describe('Commands Example', ()=>{
     it('Faild Login test', () => {
         cy.typeLogin('problem_user', 'dummypassword')
         cy.get('h3').should('contain.text', 'Epic sadface: Username and password do not match any user in this service')
-
+        
     });
 });
